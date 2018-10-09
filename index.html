@@ -22,6 +22,8 @@
   </head>
   <body>  
 
+
+
 <!-- Navigation -->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
@@ -38,7 +40,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#section-1">教育4.0</a>
+              <a class="nav-link" href="#education4">教育4.0</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#leta">LETA</a>
@@ -67,7 +69,28 @@
       <script src="https://code.jquery.com/jquery-1.11.2.min.js" /></script>
     <script src="tinyslide.js" ></script>
     <section id="tiny" class="tinyslide">
-      
+      <aside class="slides">
+        <figure>
+          <img src="img/banner/mobilebanner1.jpg" alt="" />
+          <figcaption>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="img/banner/mobilebanner2.jpg" alt="" />
+          <figcaption>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="img/banner/mobilebanner1.jpg" alt="" />
+          <figcaption>
+          </figcaption>
+        </figure>
+      </aside>
+    </section>
+    <script>
+      var tiny = $('#tiny').tiny().data('api_tiny');
+    </script>
+    <section id="tiny2" class="tinyslide">
       <aside class="slides">
         <figure>
           <img src="img/banner/newbanner1.jpg" alt="" />
@@ -80,21 +103,55 @@
           </figcaption>
         </figure>
         <figure>
-          <img src="img/banner/newbanner23.jpg" alt="" />
+          <img src="img/banner/newbanner1.jpg" alt="" />
           <figcaption>
           </figcaption>
         </figure>
       </aside>
     </section>
     <script>
-      var tiny = $('#tiny').tiny().data('api_tiny');
+      var tiny = $('#tiny2').tiny().data('api_tiny');
     </script>
+
+<!--
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active" style="background-image: url('img/banner/newbanner1.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url('img/banner/banner2.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url('img/banner/banner3.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+-->
+
+
       
     <!-- tweducation_info-->
     <section id="twedu" class="pt-5">
     <div class="container">
       <div class="row">
-        <div class="col-12 level-content">
+        <div class="col-12 px-0">
           <img src="img/twedu_info.jpg" class="img-fluid" alt="Responsive image">
         </div>
         <div class="col-12 level-content">
@@ -109,53 +166,52 @@
     </section>
 
     <!--教育4.0-->
-    <section id="section-1">
+    <section id="education4" class="pt-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 " id="education">
-    <h1 class="text-center">教育4.0<br>从心出发 教育五大思维</h1>
-    <section class="page-section">
-      <div class="container">
+        <div class="col-md-12 px-0" id="education">
+          <img src="img/edu4.jpg" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-12 pt-0">
         <div class="timeline">
           <div class="timeline__wrap">
             <div class="timeline__items">
-              <div class="timeline__item">
-                <div class="timeline__content">
+              <div class="timeline__item first-content">
+                <div class="timeline__content ">
                   <h2>教育1.0</h2>
-                  <p>时空受限<br>一师讲课<br>群生抄写</p>
+                  <p>時間、空間皆受限，教學模式僅是一個老師在台上講課，學生們在台下埋頭抄寫</p>
                 </div>
               </div>
-              <div class="timeline__item">
-                <div class="timeline__content">
+              <div class="timeline__item second-content">
+                <div class="timeline__content ">
                   <h2>教育2.0</h2>
-                  <p>电脑、简报、光碟等影音教材进入教学现场</p>
+                  <p>电脑、简报、光碟等影音教材进入了教学现场，虽然教学空间依旧主要在学校，但教学方式却也更为多元</p>
                 </div>
               </div>
               <div class="timeline__item">
                 <div class="timeline__content">
                   <h2>教育3.0</h2>
-                  <p>透过数位工具辅助，打破时间与空间限制，强调自主学习性</p>
+                  <p>新兴科技打破了时间、空间限制，数位学习创新了教学模式，也让学习习惯有了改变的契机，透过云端系统、扩增实境等技术，让学习不再单一，每个人都可以是别人的老师，而只要有网路和载具，随时随地皆可开启一堂新课程</p>
                 </div>
               </div>
-              <div class="timeline__item">
+              <div class="timeline__item forth-content">
                 <div class="timeline__content">
                   <h2>教育4.0</h2>
-                  <p>强调跨领域知识统整的能力<br>透过教学现场的虚实整合与「核心素养」的培养，让孩子重建对学习的认知、重燃对学习的热忱</p>
+                  <p>第二次文艺復心来临，应着重的不再仅是技术的革新，教育4.0的精神是回归人心，认识自我而后决定学习的方向，掌握学习自主权。除此之外，也要有跨领域知识统整的能力，使自己成为一个π型人才，在学习上以本体为主，以网际网路+为辅，透过教育现场的虚实整合，再加上「核心素养」的培养，让孩子重建对学习的认知、重燃对学习的热忱</p>
                 </div>
               </div>
           </div>
         </div>
       </div>
-    </section>
-  <script type="text/javascript" src="dist/js/timeline.min.js"></script>
-  <script>
+        <script type="text/javascript" src="dist/js/timeline.min.js"></script>
+        <script>
     timeline(document.querySelectorAll('.timeline'), {
-      forceVerticalMode: 1000,
+      forceVerticalMode: 1080,
       mode: 'horizontal',
       verticalStartPosition: 'left',
       visibleItems: 4
     });
-  </script>
+        </script>
           </div>
       </div>
     </div>
