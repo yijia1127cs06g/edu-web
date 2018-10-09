@@ -53,10 +53,10 @@ h1,h2,h3,h4,h5,h6{  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 
 
-#twedu{
+#twedu-section{
     background-color: #fdf9f6;
 }
-#leta{
+#leta-section{
     background-color: #fdf9f6;
 }
 
@@ -87,7 +87,7 @@ h1,h2,h3,h4,h5,h6{  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 
 
-#information{
+#information-section{
     background-color: #3f3f3f;
     color: #d5d5d5;
     padding-top: 2rem;
@@ -98,10 +98,10 @@ hr.light {
     margin-top: .8rem;
     margin-bottom: 1rem;
 }
-#information a {
+#information-section a {
     color: #d5d5d5;
 }
-#information img{
+#information-section img{
     width :250px;
     height: auto;
 }
@@ -133,7 +133,7 @@ hr.light-100 {
 }
 
 
-#information {
+#information-section {
     font-size: 1.2rem;
 }
 
@@ -148,13 +148,12 @@ hr.light-100 {
     font-size: 25px !important;
 }
 
-@media (max-width: 1024px) {
 
 
 
-
+body{
+    padding-top: 70px;
 }
-
 
 @media (max-width: 992px) {
 
@@ -244,9 +243,7 @@ hr.light-100 {
     padding: 1rem;
 }
 
-body{
-    padding-top: 60px;
-}
+
 .level-title{
     padding-left:0;
     padding-bottom: 0;
@@ -257,7 +254,7 @@ body{
     padding:0;
 }
 
-#member .col-12{
+#member-section .col-12{
     padding-right: 0;
     padding-left: 0;
     padding-bottom: 0;
@@ -288,3 +285,10 @@ body{
     }
 
 }
+.anchor{
+  display: block;
+  height: 76px; /*same height as header*/
+  margin-top: -76px; /*same height as header*/
+  visibility: hidden;
+}
+

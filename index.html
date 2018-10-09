@@ -15,7 +15,6 @@
     <link href="dist/css/timeline.min.css" rel="stylesheet">
     <link rel="stylesheet" href="responsive-testimonals.css">
 
-    
     <link href="tinyslide.css" rel="stylesheet" />
 
     <title>台湾教育+</title>
@@ -25,46 +24,52 @@
 
 
 <!-- Navigation -->
-
+  
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="img/logo/eduplus_white.png" width="95px" height="50px" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="img/logo/eduplus_white.png" width="95px" height="50px" alt="" onclick="myFun()"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse " id="navbarResponsive">
+          <ul class="nav navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#twedu">台湾教育+
+              <a class="nav-link" href="#twedu" onclick="myFun()">台湾教育+
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#education4">教育4.0</a>
+              <a class="nav-link" href="#edu4" onclick="myFun()">教育4.0</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#leta">LETA</a>
+              <a class="nav-link" href="#leta" onclick="myFun()">LETA</a>
             </li>
             <li class="nav-item dropdown ">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="flase" data-offset="10,20">下拉</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#first">探索</a>
-                <a class="dropdown-item" href="#second">跨界</a>
-                <a class="dropdown-item" href="#third">创新</a>
-                <a class="dropdown-item" href="#forth">无限</a>
-                <a class="dropdown-item" href="#fifth">觉醒</a>
+              <a class="nav-link dropdown-toggle" href="#first" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="flase" data-offset="10,20">教育五大思维</a>
+              <div class="dropdown-menu bg-light text-light" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#first" onclick="myFun()">探索</a>
+                <a class="dropdown-item" href="#second" onclick="myFun()">跨界</a>
+                <a class="dropdown-item" href="#third" onclick="myFun()">创新</a>
+                <a class="dropdown-item" href="#forth" onclick="myFun()">无限</a>
+                <a class="dropdown-item" href="#fifth" onclick="myFun()">觉醒</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#member">会员福利</a>
+              <a class="nav-link" href="#member" onclick="myFun()">会员福利</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#information">联络资讯</a>
+              <a class="nav-link" href="#information" onclick="myFun()">联络资讯</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <script>
+      function myFun() {
+          $('.navbar-collapse').collapse('hide');
+      };
+    </script>
+    
 
       <script src="https://code.jquery.com/jquery-1.11.2.min.js" /></script>
     <script src="tinyslide.js" ></script>
@@ -103,42 +108,12 @@
       var tiny = $('#tiny2').tiny().data('api_tiny');
     </script>
 
-<!--
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active" style="background-image: url('img/banner/newbanner1.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-            </div>
-          </div>
-          <div class="carousel-item" style="background-image: url('img/banner/banner2.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-            </div>
-          </div>
-          <div class="carousel-item" style="background-image: url('img/banner/banner3.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
--->
 
 
       
     <!-- tweducation_info-->
-    <section id="twedu" class="pt-5">
+    <span class="anchor" id="twedu"></span>
+    <section id="twedu-section">
     <div class="container">
       <div class="row">
         <div class="col-12 px-0">
@@ -156,7 +131,8 @@
     </section>
 
     <!--教育4.0-->
-    <section id="education4" class="pt-5">
+    <span class="anchor" id="edu4"></span>
+    <section id="education4">
     <div class="container">
       <div class="row">
         <div class="col-md-12 px-0" id="education">
@@ -208,7 +184,8 @@
 
     </section>
     <!-- Leta -->
-    <section id="leta" class="pt-5">
+    <span class="anchor" id="leta"></span>
+    <section id="leta-section">
     <div class="container">
       <div class="row">
         <div class="col-12 level-content">
@@ -218,8 +195,8 @@
     </div>
     </section>
     
-    
-    <section id="first" class="pt-5">
+    <span class="anchor" id="first"></span>
+    <section>
       <div class="container ">
         <div class="row">
           <div class="col-12 level-title ">
@@ -239,7 +216,9 @@
         </div>
       </div>
     </section>
-    <section id="second" class="pt-5">
+
+    <span class="anchor" id="second"></span>
+    <section>
       <div class="container">
         <div class="row">
           <div class="col-12 level-title">
@@ -266,7 +245,9 @@
         </div>
       </div>
     </section>
-    <section id="third" class="pt-5">
+
+    <span class="anchor" id="third"></span>
+    <section>
       <div class="container">
         <div class="row">
           <div class="col-12 level-title">
@@ -293,7 +274,9 @@
         </div>
       </div>
     </section>
-    <section id="forth" class="pt-5">
+
+    <span class="anchor" id="forth"></span>
+    <section>
       <div class="container">
         <div class="row">
           <div class="col-12 level-title">
@@ -320,7 +303,9 @@
         </div>
       </div>
     </section>
-    <section id="fifth" class="pt-5">
+
+    <span class="anchor" id="fifth"></span>
+    <section>
       <div class="container">
         <div class="row">
           <div class="col-12 level-title">
@@ -335,7 +320,8 @@
     </section>
 
     <!-- Member ship-->
-    <section id="member" class="pt-5">
+    <span class="anchor" id="member"></span>
+    <section id="member-section">
       <div class="container">
         <div class="row">
         <div class="col-12">
@@ -346,8 +332,8 @@
     </section>
 
 
-
-            <footer id="information">
+        <span class="anchor" id="information"></span>
+            <footer id="information-section">
             <div class="container" >
               <div class="row text-center justify-content-center">
                   <div class="col-md-5">
